@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
 #board,
 .boardInfo {
   max-width: 500px;
+  margin: 0 auto;
 }
 #board {
   display: grid;
@@ -28,17 +30,19 @@
   background: #f35a51;
   border: none;
   color: black;
+  cursor: pointer;
 }
 #scoreBoard {
   display: inline-flex;
 }
 .square {
   aspect-ratio: 1;
+  border: 1px solid #11273f;
 }
 .emptySquare {
   background: #456990;
 }
-.sankeSquere {
+.snakeSquare {
   background: #ccf47f;
 }
 .foodSquare {

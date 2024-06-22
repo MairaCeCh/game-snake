@@ -35,13 +35,10 @@ const drawSquare = (square, type) => {
   const squareElement = document.getElementById(square);
   squareElement.setAttribute("class", `square ${type}`);
 
-  if (type === "emptySquare") {
-    emptySquares.push(square);
-  } else {
-    if (emptySquares.indexOf(square) !== -1) {
+  type === "emptySquare"
+    ? emptySquares.push(square)
+    : emptySquares.indexOf(square) !== -1 &&
       emptySquares.splice(emptySquares.indexOf(square), 1);
-    }
-  }
 };
 
 const moveSnake = () => {
